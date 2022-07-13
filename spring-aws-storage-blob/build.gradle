@@ -1,0 +1,49 @@
+plugins {
+  id 'org.springframework.boot' version '2.7.1'
+  id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+  id 'java'
+}
+
+group = 'com.lab.aws.storage'
+version = 'final'
+sourceCompatibility = '17'
+
+repositories {
+  mavenCentral()
+}
+
+ext {
+  set('awsSpringVersion', '2.3.3')
+  set('testcontainersVersion', '1.16.3')
+}
+
+dependencies {
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+  implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+  implementation 'io.awspring.cloud:spring-cloud-starter-aws'
+  implementation 'io.awspring.cloud:spring-cloud-starter-aws-messaging'
+  implementation 'io.awspring.cloud:spring-cloud-starter-aws'
+  implementation 'io.awspring.cloud:spring-cloud-starter-aws-parameter-store-config'
+
+  testImplementation 'org.springframework.boot:spring-boot-starter-test'
+  testImplementation 'org.testcontainers:localstack'
+  testImplementation 'org.testcontainers:junit-jupiter'
+}
+
+dependencyManagement {
+  imports {
+    mavenBom "io.awspring.cloud:spring-cloud-aws-dependencies:${awsSpringVersion}"
+    mavenBom "org.testcontainers:testcontainers-bom:${testcontainersVersion}"
+  }
+}
+
+bootRun {
+  jvmArgs = [
+    "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005",
+    "-Daws.profile=developer01",
+  ]
+}
+
+test {
+  useJUnitPlatform()
+}

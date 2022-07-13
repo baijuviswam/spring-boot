@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "cloud.aws.credentials.access-key",
+    "type": "java.lang.String",
+    "description": "A description for 'cloud.aws.credentials.access-key'"
+  },
+  {
+    "name": "cloud.aws.credentials.secret-key",
+    "type": "java.lang.String",
+    "description": "A description for 'cloud.aws.credentials.secret-key'"
+  },
+  {
+    "name": "cloud.aws.credentials.profile-name.access-key",
+    "type": "java.lang.String",
+    "description": "A description for 'cloud.aws.credentials.profile-name.access-key'"
+  },
+  {
+    "name": "cloud.aws.credentials.profile-name.secret-key",
+    "type": "java.lang.String",
+    "description": "A description for 'cloud.aws.credentials.profile-name.secret-key'"
+  },
+  {
+    "name": "custom.bucket.name",
+    "type": "java.lang.String",
+    "description": "A description for 'custom.bucket.name'"
+  },
+  {
+    "name": "custom.sqs-queue-name",
+    "type": "java.lang.String",
+    "description": "A description for 'custom.sqs-queue-name'"
+  },
+  {
+    "name": "custom.bucket-name",
+    "type": "java.lang.String",
+    "description": "A description for 'custom.bucket-name'"
+  }
+]}

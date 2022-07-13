@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: stratospheric-aws-springboot
+  config:
+    import: 'aws-parameterstore:'
+
+cloud:
+  aws:
+    credentials:
+      profile-name: developer01
+    region:
+      static: us-west-1
+    stack:
+      auto: false # Automatic stack detection
+    sns:
+      enabled: true
+    sqs:
+      enabled: true
+   
+custom:
+   bucket-name: lab-bucket-4702-sb-aws
+   sqs-queue-name: stratospheric-demo-queue
