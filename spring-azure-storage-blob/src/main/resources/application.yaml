@@ -1,0 +1,6 @@
+azure:
+  storage:
+    container:
+      name: knfcontainer
+    connection:
+      string: DefaultEndpointsProtocol=https;AccountName=knfstorage;AccountKey=zQv0WP825IFFuloX9HqDr2KZIrjNMPsLBY8pHit3l8JjE9lx+/3WHoJGUDYgtOwLukPs+lVX66WT+AStPVqAYg==;EndpointSuffix=core.windows.net

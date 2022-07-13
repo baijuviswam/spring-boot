@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "azure.storage.container.name",
+    "type": "java.lang.String",
+    "description": "A description for 'azure.storage.container.name'"
+  },
+  {
+    "name": "azure.storage.connection.string",
+    "type": "java.lang.String",
+    "description": "A description for 'azure.storage.connection.string'"
+  },
+  {
+    "name": "spring.http.multipart.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.http.multipart.enabled'"
+  }
+]}
